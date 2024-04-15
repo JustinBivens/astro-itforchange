@@ -17,48 +17,81 @@ import '@fontsource-variable/inter';
 // Oswald
 // 'Space Grotesk'
 // Urbanist
-
 ---
 
 <style is:inline>
+  /* tokens */
   :root {
-    --aw-font-sans: 'InterVariable';
-    --aw-font-serif: 'InterVariable';
-    --aw-font-heading: 'InterVariable';
+    --aw-default-font-sans: 'InterVariable';
+    --aw-default-font-serif: 'InterVariable';
+    --aw-default-font-heading: 'InterVariable';
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    /* light default tokens */
+    --aw-color-light-primary: rgb(1 97 239);
+    --aw-color-light-on-primary: rgb(255, 255, 255);
+    --aw-color-light-accent: rgb(109 40 217);
+    --aw-color-light-on-accent: rgb(230, 230, 255);
+    --aw-color-light-background: rgb(255 255 255);
+    --aw-color-light-on-background: rgb(16 16 16);
+    --aw-color-light-on-background-muted: rgb(16 16 16 / 66%);
 
-    --aw-color-text-heading: 'InterVariable';
-    --aw-color-text-default: rgb(16 16 16);
-    --aw-color-text-muted: rgb(16 16 16 / 66%);
-    --aw-color-bg-page: rgb(255 255 255);
+    /* dark default tokens */
+    --aw-color-dark-primary: rgb(1 97 239);
+    --aw-color-dark-on-primary: rgb(255, 255, 255);
+    --aw-color-dark-accent: rgb(109 40 217);
+    --aw-color-dark-on-accent: rgb(230, 230, 255);
+    --aw-color-dark-background: rgb(3 6 32);
+    --aw-color-dark-on-background: rgb(229 236 246);
+    --aw-color-dark-on-background-muted: rgb(229 236 246 / 66%);
+  }
 
-    --aw-color-bg-page-dark: rgb(3 6 32);
+  /* default light theme */
+  :root {
+    --aw-font-sans: var(--aw-default-font-sans);
+    --aw-font-serif: var(--aw-default-font-serif);
+    --aw-font-heading: var(--aw-default-font-heading);
+
+    --aw-color-primary: var(--aw-color-light-primary);
+    --aw-color-on-primary: var(--aw-color-light-on-primary);
+    --aw-color-accent: var(--aw-color-light-accent);
+    --aw-color-on-accent: var(--aw-color-light-on-accent);
+    --aw-color-background: var(--aw-color-light-background);
+    --aw-color-on-background: var(--aw-color-light-on-background);
+    --aw-color-on-background-muted: var(--aw-color-light-on-background-muted);
 
     ::selection {
-      background-color: lavender;
+      background-color: var(--aw-color-on-accent);
     }
   }
 
+  /* dark theme */
   .dark {
-    --aw-font-sans: 'InterVariable';
-    --aw-font-serif: 'InterVariable';
-    --aw-font-heading: 'InterVariable';
-
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
-
-    --aw-color-text-heading: rgb(247, 248, 248);
-    --aw-color-text-default: rgb(229 236 246);
-    --aw-color-text-muted: rgb(229 236 246 / 66%);
-    --aw-color-bg-page: rgb(3 6 32);
+    --aw-color-primary: var(--aw-color-dark-primary);
+    --aw-color-on-primary: var(--aw-color-dark-on-primary);
+    --aw-color-accent: var(--aw-color-dark-accent);
+    --aw-color-on-accent: var(--aw-color-dark-on-accent);
+    --aw-color-background: var(--aw-color-dark-background);
+    --aw-color-on-background: var(--aw-color-dark-on-background);
+    --aw-color-on-background-muted: var(--aw-color-dark-on-background-muted);
 
     ::selection {
-      background-color: black;
-      color: snow;
+      background-color: var(--aw-color-accent);
+      color: var(--aw-color-on-accent);
+    }
+  }
+
+  /* light theme */
+  .light {
+    --aw-color-primary: var(--aw-color-light-primary);
+    --aw-color-on-primary: var(--aw-color-light-on-primary);
+    --aw-color-accent: var(--aw-color-light-accent);
+    --aw-color-on-accent: var(--aw-color-light-on-accent);
+    --aw-color-background: var(--aw-color-light-background);
+    --aw-color-on-background: var(--aw-color-light-on-background);
+    --aw-color-on-background-muted: var(--aw-color-light-on-background-muted);
+
+    ::selection {
+      background-color: var(--aw-color-on-accent);
     }
   }
 </style>

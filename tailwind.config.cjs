@@ -7,10 +7,12 @@ module.exports = {
     extend: {
       colors: {
         primary: 'var(--aw-color-primary)',
-        secondary: 'var(--aw-color-secondary)',
+        'on-primary': 'var(--aw-color-on-primary)',
         accent: 'var(--aw-color-accent)',
-        default: 'var(--aw-color-text-default)',
-        muted: 'var(--aw-color-text-muted)',
+        'on-accent': 'var(--aw-color-on-accent)',
+        background: 'var(--aw-color-background)',
+        'on-background': 'var(--aw-color-on-background)',
+        'on-background-muted': 'var(--aw-color-on-background-muted)',
       },
       fontFamily: {
         sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
