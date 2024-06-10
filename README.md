@@ -32,18 +32,18 @@
 <details open>
 <summary>Table of Contents</summary>
 
-- [Demo](#demo)
-- [Upcoming: AstroWind 2.0 – We Need Your Vision!](#-upcoming-astrowind-20--we-need-your-vision)
-- [Getting started](#getting-started)
-  - [Project structure](#project-structure)
-  - [Commands](#commands)
-  - [Configuration](#configuration)
-  - [Deploy](#deploy)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Related Projects](#related-projects)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
+#- [Demo](#demo)
+#- [Upcoming: AstroWind 2.0 – We Need Your Vision!](#-upcoming-astrowind-20--we-need-your-vision)
+#- [Getting started](#getting-started)
+#  - [Project structure](#project-structure)
+#  - [Commands](#commands)
+#  - [Configuration](#configuration)
+#  - [Deploy](#deploy)
+#- [Frequently Asked Questions](#frequently-asked-questions)
+#- [Related Projects](#related-projects)
+#- [Contributing](#contributing)
+#- [Acknowledgements](#acknowledgements)
+#- [License](#license)
 
 </details>
 
